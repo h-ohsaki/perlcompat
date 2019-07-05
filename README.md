@@ -2,7 +2,7 @@
 
 perlcompat - Perl-like utility functions such as warn, die, getopt, and require.
 
-# WHAT IS IT?
+# DESCRIPTION
 
 This manual page documents **perlcompat** module, a Python module providing
 Perl-like utility functions such as warn, die, getopt, and require.
@@ -42,7 +42,7 @@ if opt.o:
 
 ```
 
-# DESCRIPTION
+# FUNCTIONS
 
 **perlcompat** module provides the following functions.
 
