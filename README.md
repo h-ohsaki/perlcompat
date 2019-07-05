@@ -20,7 +20,7 @@ similar to Perl's counterparts.
 ```python
 import os
 import sys
-from perl import warn, die, getopts, require
+from perlcompat import warn, die, getopts, require
 
 # make sure the Python is no older than version 3.6
 require('3.6')
