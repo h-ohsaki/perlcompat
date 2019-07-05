@@ -20,26 +20,28 @@ similar to Perl's counterparts.
 ```python
 import os
 import sys
-from perlcompat import warn, die, getopt, require
+from perl import warn, die, getopts, require
 
 # make sure the Python is no older than version 3.6
 require('3.6')
 
 # display warning message
-warn('starting of sample program in directory {}...'.format(os.getcwd())')
+warn('starting of sample program in directory {}...'.format(os.getcwd()))
 
 # parse command-line options
 # variables opt.v, opt.f, and opt.o are automatically defined
 opt = getopts('vf:o:') or die('usage: {} [-v] [-f config] [-o outfile]'.format(sys.argv[0]))
 
 if opt.v:
-    warn('running in verbose mode')
+    warn('verbose mode')
 if opt.f:
     conffile = opt.f if opt.f else 'config.ini'
-    warn('config file "{}" specified.'.format(conffile))
+    warn('config file: {}'.format(conffile))
 if opt.o:
-   outfile = opt.o if opt.o else 'out.txt'
+    outfile = opt.o if opt.o else 'out.txt'
+    warn('output file: {}'.format(outfile))
 
+warn('remaining arguments: {}'.format(sys.argv[1:]))
 ```
 
 # FUNCTIONS
