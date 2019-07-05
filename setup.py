@@ -7,7 +7,7 @@ with open('README.md', 'r') as fh:
 
 setuptools.setup(
     name="perlcompat",
-    version="1.10",
+    version="1.0",
     author="Hiroyuki Ohsaki",
     author_email="author@example.com",
     description="Perl-like utility functions such as warn, die, getopt, and require",
