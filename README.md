@@ -57,7 +57,7 @@ warn('remaining arguments: {}'.format(sys.argv[1:]))
   Display message ASTR to the standard error output and terminate the program
   execution
 
-- getopt(spec)
+- getopts(spec)
 
   Parse UNIX-style command line options.  Options are specified by SPEC.
   Parsed options are returned as an object.  A value for option X is
@@ -66,8 +66,10 @@ warn('remaining arguments: {}'.format(sys.argv[1:]))
   **perlcompat** module only supports short options (e.g., -v, -f foo.txt).
   Log options (e..g, --verbose, --file foo.txt) are not suported.
 
-- require()
+- require(version)
 
+  Abort the program if the current Python interepter does not satisfy version
+  requirement (i.e., the version is older than VERSION).
 
 # INSTALLATION
 
