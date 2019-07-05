@@ -11,12 +11,12 @@ import getopt
 import sys
 
 def warn(astr):
-    """Display warning message to the standard error output."""
+    """Display warning message ASTR to the standard error output."""
     print(astr, file=sys.stderr)
 
 def die(astr):
-    """Display message to the standard error output and terminate the program
-execution."""
+    """Display message ASTR to the standard error output and terminate the
+program execution."""
     raise SystemExit(astr)
 
 class _Options:
